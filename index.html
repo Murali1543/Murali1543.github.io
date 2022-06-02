@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lan>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,20 +10,35 @@
     <title> Murali's portfolio </title>
     <link rel="icon" type="image/png" href="/images/favicon_io/favicon-32x32.png">
     <style>
-        p {
+        p,h4 {
             font-family: verdana;
-        }
-
-        h4 {
-            font-family: Verdana;
         }
 
         body {
             background-color: blanchedalmond;
         }
 
+        /* class hf refers to header and footer */
+        .hf {
+            background-color: teal;
+            text-align: center;
+        }
+
+        /* class sm refers to social media */
         .sm {
             background-color: whitesmoke;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* make an opt class to show a related image */
+        .opt {
+           float: right;
+        }
+
+        /* class cf refers to contact form */
+        .cf {
+            text-align: center;
         }
     </style>
 
@@ -31,54 +46,69 @@
 
 <body>
     <h2 style="font-family: verdana;"> Simple Portfolio. </h2>
-    <div>
-        <center>
-            <header style="background-color: teal;">
-                <!-- <h3> Header: </h3> -->
-                <img src="/images/logo-he.png" alt="Logo" height="200px" width="200px"> <br> <br>
-                <button>Contact</button>
-            </header>
-        </center>
+    <!-- Header Section -->
+    <div class="hf">
+
+        <header>
+            <!-- <h3> Header: </h3> -->
+            <img src="/images/logo-he.png" alt="Logo" height="200px" width="200px"> <br> <br>
+            <button style="background-color:lightcyan;">Contact</button>
+        </header>
+
     </div>
-    <hr>
+    <!-- Introduction Part -->
     <div>
         <h3 style="font-family: verdana;"> <u>Introduction</u> : </h3>
         <!-- <img src="/images/logo.jpg" alt="Logo" height="200px" width="200px"> -->
+        <div class="opt">
+            <img src="/images/logo-ft.png" width="250px" height="250px">
+        </div>
         <h4> <u>About</u> : </h4>
         <p>Myself Murali Krishna currently I'm undergoing through fullstack training at #Insert. </p>
         <h4> <u>Education</u> :</h4>
         <p> I have done my B.tech, but yet to learn something new which I didn't Know.</p>
-
-
-        <!-- <img src="/images/logo-ft.png" width="250px" height="250px" text-align:center;> -->
-
         <h4> <u>Skills</u> :</h4>
         <p> Basic skills that can execute Hello-world program. </p>
         <h4> <u>Work</u> :</h4>
         <p> Nothing much but have to posses it now. </p>
-        <hr>
+
     </div>
+    <!-- Footer Section -->
     <div>
-        <center>
-            <footer style="background-color:teal">
-                <!-- <h3> Footer: </h3> -->
-                <img src="/images/logo-he.png" alt="Logo" height="200px" width="200px"> <br>
-                <small>
-                    © 2022 Murali's Portfolio.All rights reserved.
-                </small>
-            </footer>
-        </center>
+
+        <footer class="hf">
+            <!-- <h3> Footer: </h3> -->
+            <img src="/images/logo-he.png" alt="Logo" height="200px" width="200px"> <br>
+            <small>
+                © 2022 Murali's Portfolio.All rights reserved.
+            </small>
+        </footer>
+
     </div>
-    <div class="sm">
-        <center>
-            <a href="https://www.facebook.com/" target="_blank"> <img src="/images/Facebook.png" width="55px"
-                    height="55px" alt="Facebook"> </a>
+    <br> <br>
+    <!-- Contact Form -->
+    <div class="cf">
+        <form>
+            <h3> Let's Get In Touch </h3>
+            <p> I'm available to work on your projects and bring your ideas to life. I am just a click away.</p> <br>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            <input type="text" id="email" name="email" placeholder="Your Email Address">
+            <br><br>
+            <textarea rows="6" cols="44" name="message" placeholder="Your Message"></textarea>
             <br>
-            <a href="https://www.instagram.com/accounts/login/" target="_blank"> <img src="/images/Instagram.png"
-                    width="55px" height="50px" alt="Instagram"></a> <br>
-            <a href="https://myaccount.google.com/" target="_blank"> <img src="/images/Gmail.webp" width="50px"
-                    height="50px" alt="Gmail"> </a>
-        </center>
+            <input type="Submit" name="sbutton" id="sb" value="submit" style="background-color:lightgreen">
+        </form>
+    </div>
+    <!-- Social media part -->
+    <div class="sm">
+
+        <a href="https://www.facebook.com/" target="_blank"> <img src="/images/Facebook.png" width="50px" height="50px"
+                alt="Facebook"> </a>
+        <a href="https://www.instagram.com/accounts/login/" target="_blank"> <img src="/images/Instagram.png"
+                width="45px" height="45px" alt="Instagram"> </a> 
+        <a href="https://myaccount.google.com/" target="_blank"> <img src="/images/Gmail.webp" width="45px"
+                height="45px" alt="Gmail"> </a>
+
     </div>
 </body>
 
