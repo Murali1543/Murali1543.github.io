@@ -7,24 +7,30 @@
     <meta name="keywords" content="About, Education, Contact details,">
     <meta name="author" content="Murali">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+
     <title> Murali's portfolio </title>
     <link rel="icon" type="image/png" href="/images/favicon_io/favicon-32x32.png">
+
     <style>
         body {
-            background-color: blanchedalmond;
+            background-color:#E3FDFD;
         }
 
         /* class hf refers to header and footer */
         .hf {
-            background-color: teal;
+            background-color:teal;
             text-align: center;
         }
-        .btn{
-            background-color:lightcyan;
+
+        .btn {
+            background-color: lightcyan;
             float: right;
             margin-top: 0.25em;
             margin-right: 0.25em;
+            color:#A2DBFA;
+            background-color:#003638;
         }
+
         /* class sm refers to social media */
         .sm {
             background-color: whitesmoke;
@@ -40,6 +46,13 @@
         /* class cf refers to contact form */
         .cf {
             text-align: center;
+            background-color: ;
+        }
+        .cf form input {
+            background-color: lightyellow;
+        }
+        .cf form textarea{
+            background-color: lightyellow;
         }
 
         .container {
@@ -66,12 +79,18 @@
             font-family: Trebuchet MS;
             text-align: center;
         }
+        h2,h3,h4{
+            color:dodgerblue;
+        }
+        p{
+            color:darkcyan;
+        }
     </style>
 
 </head>
 
 <body>
-    <h2 style="font-family: verdana;"> Simple Portfolio. </h2>
+    <h2 style="font-family: verdana;"> Simple Portfolio </h2>
     <!-- Header Section -->
     <div class="hf">
 
@@ -91,8 +110,8 @@
             <large> <img src="/images/logo-ft.png" width="250px" height="250px"> </large>
         </div>
         <div>
-            <h3 style="text-align: center; font-family: 'Trebuchet MS';"> Who I am</h3>
-            <p style="text-align: center; font-family: 'Trebuchet MS';"> A little about me and my work. </p>
+            <h3 class="fo"> Who I am</h3>
+            <p class="fo"> A little about me and my work. </p>
         </div>
         <div class="container">
             <div class="con1">
@@ -145,7 +164,7 @@
                 <br><br>
                 <textarea rows="6" cols="44" name="message" placeholder="Your Message"></textarea>
                 <br>
-                <input type="Submit" name="sbutton" id="sb" value="submit" style="background-color:lightgreen">
+                <input type="Submit" name="sbutton" id="sb" value="Submit" style="background-color:lightgreen; color:rgb(6, 121, 144);">
             </form>
         </div>
         <!-- Social media part -->
