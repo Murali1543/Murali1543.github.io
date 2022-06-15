@@ -1,0 +1,84 @@
+body {
+    background-color: #E3FDFD;
+}
+
+/* class hf refers to header and footer */
+.hf {
+    background-color: teal;
+    text-align: center;
+}
+
+.btn {
+    background-color: lightcyan;
+    float: right;
+    margin-top: 0.25em;
+    margin-right: 0.25em;
+    color: #A2DBFA;
+    background-color: #003638;
+}
+
+/* class sm refers to social media */
+.sm {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* class cf refers to contact form */
+.cf {
+    text-align: center;
+    /* background-color: ; */
+    font-family:Trebuchet MS;
+}
+
+.cf form input {
+    background-color: lightyellow;
+    /* border-color:white; */
+    /* border: none; */
+}
+
+.cf form textarea {
+    background-color: lightyellow;
+}
+
+.container {
+    display: flex;
+    font-family: verdana;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* make an opt class to show a related image */
+.opt {
+    float: right;
+    margin-top: 130px;
+}
+
+/* class .con1 refers to container1 */
+.con1 {
+    display: flex;
+    width: 39%;
+    margin: 5px;
+}
+/* class .con2 refers to container2 */
+.con2 {
+    display: flex;
+    width: 40%;
+    margin: 5px;
+}
+
+.little {
+    display: flex;
+    flex-direction: column;
+    font-family: Trebuchet MS;
+    text-align: start;
+    margin-left:-210px;
+} 
+
+ h2,h3,h4 {
+    color: dodgerblue;
+}
+
+p {
+    color: darkcyan;
+}

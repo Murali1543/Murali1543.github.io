@@ -7,86 +7,9 @@
     <meta name="keywords" content="About, Education, Contact details,">
     <meta name="author" content="Murali">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-
+    <link rel="stylesheet" href="style.css">
     <title> Murali's portfolio </title>
     <link rel="icon" type="image/png" href="/images/favicon_io/favicon-32x32.png">
-
-    <style>
-        body {
-            background-color:#E3FDFD;
-        }
-
-        /* class hf refers to header and footer */
-        .hf {
-            background-color:teal;
-            text-align: center;
-        }
-
-        .btn {
-            background-color: lightcyan;
-            float: right;
-            margin-top: 0.25em;
-            margin-right: 0.25em;
-            color:#A2DBFA;
-            background-color:#003638;
-        }
-
-        /* class sm refers to social media */
-        .sm {
-            background-color: whitesmoke;
-            text-align: center;
-            padding: 15px;
-        }
-
-        /* make an opt class to show a related image */
-        .opt {
-            float: right;
-        }
-
-        /* class cf refers to contact form */
-        .cf {
-            text-align: center;
-            background-color: ;
-        }
-        .cf form input {
-            background-color: lightyellow;
-        }
-        .cf form textarea{
-            background-color: lightyellow;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            font-family: verdana;
-        }
-
-        /* class .con1 refers to container1 */
-        .con1 {
-            width: 500px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* class .con2 refers to container2 */
-        .con2 {
-            width: 500px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .fo {
-            font-family: Trebuchet MS;
-            text-align: center;
-        }
-        h2,h3,h4{
-            color:dodgerblue;
-        }
-        p{
-            color:darkcyan;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -103,81 +26,80 @@
         <button class="btn">Contact</button>
     </div>
     <!-- Introduction Part -->
+    <div class="opt">
+        <large> <img src="/images/logo-ft.png" width="250px" height="250px"> </large>
+    </div>
+    <div class="container">
+            <div class="little">
+                <h3> Who I am</h3>
+                <p> A little about me and my work. </p>
+            </div>
+        <div class="con1">
+            <div>
+                <img src="/images/about.png" width="50px" height="50px">
+                <h4> About </h4>
+                <p>Myself Murali Krishna currently I'm undergoing through fullstack training at #Insert. </p>
+            </div>
+            <div>
+                <img src="/images/education.png" width="50px" height="50px">
+                <h4> Education </h4>
+                <p>I have done my B.tech, but yet to learn something new which I didn't Know. </p>
+            </div>
+
+        </div>
+        <div class="con2">
+            <div>
+                <img src="/images/skills.png" width="50px" height="50px">
+                <h4> Skills </h4>
+                <p> Basic skills that can execute Hello-world program. </p>
+            </div>
+            <div>
+                <img src="/images/work.png" width="50px" height="50px">
+                <h4> Work </h4>
+                <p> Nothing much but have to posses it now. </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
     <div>
-        <!-- <h3 style="font-family: verdana;"> Introduction </h3> -->
-        <!-- <img src="/images/logo.jpg" alt="Logo" height="200px" width="200px"> -->
-        <div class="opt">
-            <large> <img src="/images/logo-ft.png" width="250px" height="250px"> </large>
-        </div>
-        <div>
-            <h3 class="fo"> Who I am</h3>
-            <p class="fo"> A little about me and my work. </p>
-        </div>
-        <div class="container">
-            <div class="con1">
-                <div>
-                    <img src="/images/about.png" width="50px" height="50px">
-                    <h4> About </h4>
-                    <p>Myself Murali Krishna currently I'm undergoing through fullstack training at #Insert. </p>
-                </div>
-                <div>
-                    <img src="/images/skills.png" width="50px" height="50px">
-                    <h4> Skills </h4>
-                    <p> Basic skills that can execute Hello-world program. </p>
-                </div>
-            </div>
-            <div class="con2">
-                <div>
-                    <img src="/images/education.png" width="50px" height="50px">
-                    <h4> Education </h4>
-                    <p>I have done my B.tech, but yet to learn something new which I didn't Know. </p>
-                </div>
-                <div>
-                    <img src="/images/work.png" width="50px" height="50px">
-                    <h4> Work </h4>
-                    <p> Nothing much but have to posses it now. </p>
-                </div>
-            </div>
-        </div>
-        <!-- Footer Section -->
-        <div>
 
-            <footer class="hf">
-                <!-- <h3> Footer: </h3> -->
-                <img src="/images/logo-he.png" alt="Logo" height="200px" width="200px"> <br>
-                <small>
-                    © 2022 Murali's Portfolio.All rights reserved.
-                </small>
-            </footer>
+        <footer class="hf">
+            <!-- <h3> Footer: </h3> -->
+            <img src="/images/logo-he.png" alt="Logo" height="200px" width="200px"> <br>
+            <small>
+                © 2022 Murali's Portfolio.All rights reserved.
+            </small>
+        </footer>
 
-        </div>
-        <br> <br>
-        <!-- Contact Form -->
-        <div class="cf">
-            <form>
-                <h3 class="fo"> Let's Get In Touch </h3>
-                <p class="fo"> I'm available to work on your projects and bring your ideas to life. I am just a click
-                    away.</p>
-                <br>
-                <input type="text" id="name" name="name" placeholder="Your Name">
-                <input type="text" id="email" name="email" placeholder="Your Email Address">
-                <br><br>
-                <textarea rows="6" cols="44" name="message" placeholder="Your Message"></textarea>
-                <br>
-                <input type="Submit" name="sbutton" id="sb" value="Submit" style="background-color:lightgreen; color:rgb(6, 121, 144);">
-            </form>
-        </div>
-        <!-- Social media part -->
-        <div class="sm">
+    </div>
+    <br> <br>
+    <!-- Contact Form -->
+    <div class="cf">
+        <form>
+            <h3> Let's Get In Touch </h3>
+            <p> I'm available to work on your projects and bring your ideas to life. I am just a click
+                away.</p>
+            <br>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            <input type="text" id="email" name="email" placeholder="Your Email Address">
+            <br><br>
+            <textarea rows="6" cols="44" name="message" placeholder="Your Message"></textarea>
+            <br>
+            <input type="Submit" name="sbutton" id="sb" value="Submit"
+                style="background-color:lightgreen; color:rgb(6, 121, 144);">
+        </form>
+    </div>
+    <!-- Social media part -->
+    <div class="sm">
 
-            <a href="https://www.facebook.com/" target="_blank"> <img src="/images/Facebook.png" width="50px"
-                    height="50px" alt="Facebook"> </a>
-            <a href="https://www.instagram.com/accounts/login/" target="_blank"> <img src="/images/Instagram.png"
-                    width="45px" height="45px" alt="Instagram"> </a>
-            <a href="https://myaccount.google.com/" target="_blank"> <img src="/images/Gmail.webp" width="45px"
-                    height="45px" alt="Gmail"> </a>
+        <a href="https://www.facebook.com/" target="_blank"> <img src="/images/Facebook.png" width="50px" height="50px"
+                alt="Facebook"> </a>
+        <a href="https://www.instagram.com/accounts/login/" target="_blank"> <img src="/images/Instagram.png"
+                width="45px" height="45px" alt="Instagram"> </a>
+        <a href="https://myaccount.google.com/" target="_blank"> <img src="/images/Gmail.webp" width="45px"
+                height="45px" alt="Gmail"> </a>
 
-        </div>
+    </div>
 </body>
 
 </html>
