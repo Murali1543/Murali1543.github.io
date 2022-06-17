@@ -82,3 +82,44 @@ body {
 p {
     color: darkcyan;
 }
+
+/* For Mobiles */
+@media only screen and (max-width:500px) {
+    body{
+        background-color: #003638;
+    }
+    .opt{
+    display: none;
+    }
+    .little{
+        text-align: center;
+        padding-left: 200px;
+    }
+    h2{
+        text-align: center;
+    }
+    .container .con1, .con2{
+        display:block;
+    }
+
+}
+
+/* For Tablet */
+@media only screen and (min-width:505px) and (max-width:700px) {
+    body{
+        background-color:black;
+    }
+    .opt{
+        display: none;
+    }
+    h2{
+        text-align: center;
+    }
+    .con1, .con2{
+        display: block;
+    }
+    .little{
+        margin-left: auto;
+        padding-right: 75px;       
+    }
+}
